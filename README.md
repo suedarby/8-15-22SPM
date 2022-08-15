@@ -1,27 +1,55 @@
-# 81522SPM
+# Sewing Project Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+## Why?
 
-## Development server
+Every crafter knows the pain of not being able to find something and spending the money on a duplicate even though they “know it’s here somewhere”. To reduce duplication of patterns, notions, fabric and other supplies for sewing & crafts, the Sewing Project Manager was born.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The focus for this project is as follows:
 
-## Code scaffolding
+- Projects
+- Stash
+- Shopping
+- Budget
+- Dashboard
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## The Stack
 
-## Build
+- Node
+- Angular
+- Bootstrap
+- Firebase
+- Google Auth
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Workflow
 
-## Running unit tests
+- User registers with their Google account
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- User Logs in
 
-## Running end-to-end tests
+- Presented with a Dashboard with
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+  - Projects, Shopping list, Budget and Stash
 
-## Further help
+- Projects
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  - Future project with a supply list and inspiration
+
+  - Supplies are checked against the stash and if not found added to the shopping list (future feature)
+
+- Shopping List
+
+  - List of items to purchase to complete a project
+
+  - Items to refresh the stash for common items
+
+- Stash
+
+  - Shows what is in the stash
+
+  - Where it is stored
+
+  - Where it was last seen
+
+  - Tracks the quantity of items in the stash and adds to the shopping list when the quantity gets low (future feature)
+
+- Budgets will show if a project is over or under a targeted budget to assist with money management.(future feature)
