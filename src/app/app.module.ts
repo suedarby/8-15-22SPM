@@ -12,16 +12,22 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectformComponent } from './projectform/projectform.component';
 import { RegisterComponent } from './register/register.component';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { StashformComponent } from './stashform/stashform.component';
+import { StashComponent } from './stash/stash.component';
 
 @NgModule({ //original
-  declarations: [						//original
+  declarations: [									//original
     AppComponent, //original
     ProjectsComponent,
     DashComponent,
       LoginComponent,
       ProfileComponent,
       ProjectformComponent,
-      RegisterComponent
+      RegisterComponent,
+      ShoppingComponent,
+      StashformComponent,
+      StashComponent
    ], //original
 
   imports: [
