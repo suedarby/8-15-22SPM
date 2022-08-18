@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stash.component.css']
 })
 export class StashComponent implements OnInit {
-
+  title = 'Stash';
   constructor() { }
 
   ngOnInit() {

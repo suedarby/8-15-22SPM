@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title '8-15-22SPM'`, () => {
+  it(`should have as title 'Sewing Project Manager'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('8-15-22SPM');
+    expect(app.title).toEqual('Sewing Project Manager');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('8-15-22SPM app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Sewing Project Manager app is running!');
   });
 });
