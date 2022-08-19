@@ -1,11 +1,11 @@
-
-
 <h1 style="padding: 5px; margin: 5px">What's in you {{ title }}?</h1>
 <div class="container">
   <form>
     <div class="row" style="padding: 5px">
       <div class="col-lg-2">
-        <label class="col-form-label">Item Name</label>
+        <label class="col-form-label">
+          Item Name
+        </label>
       </div>
       <div class="col">
         <input
@@ -16,22 +16,22 @@
         />
       </div>
       <div class="col-lg-2">
-        <label class="col-form-label" style="margin-right: 28px"
-          >Images</label
-        >
+        <label class="col-form-label" style="margin-right: 28px">
+          Images
+        </label>
       </div>
       <div class="col">
-        <input
-          class="form-control"
-          type="file"
+        <input class="form-control" type="file" style="margin: 5px" /><img
           style="margin: 5px"
-        /><img style="margin: 5px" /><img style="margin: 5px" />
+        /><img style="margin: 5px" />
       </div>
       <div class="w-100"></div>
     </div>
     <div class="row">
       <div class="col-lg-2" style="height: 41px">
-        <label class="col-form-label">Description</label>
+        <label class="col-form-label">
+          Description
+        </label>
       </div>
       <div class="col-lg-5">
         <textarea
@@ -40,45 +40,23 @@
         ></textarea>
       </div>
       <div class="col-lg-1">
-        <label class="col-form-label">Tags</label>
+        <label class="col-form-label">
+          Tags
+        </label>
       </div>
       <div class="col">
-        <input
-          class="form-control"
-          type="text"
-          autocomplete="on"
-          autofocus=""
-          style="margin: 3px"
-        /><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
-          Results</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
-          Results</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
-          Results</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
-          Results
+        <input class="form-control" type="text" autocomplete="on" autofocus="on" style="margin: 3px"
+          [(ngModel)]="tag" />
+        <button class="btn btn-primary" type="button" style="margin: 5px">
+          {{ tag }}
         </button>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-2" style="height: 41px">
-        <label class="col-form-label">Category</label>
+        <label class="col-form-label">
+          Category
+        </label>
       </div>
       <div class="col">
         <input
@@ -87,29 +65,13 @@
           autocomplete="on"
           autofocus=""
           style="margin: 3px"
-        /><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
+        /><button class="btn btn-primary" type="button" style="margin: 5px">
           Button</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
+        ><button class="btn btn-primary" type="button" style="margin: 5px">
           Button</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
+        ><button class="btn btn-primary" type="button" style="margin: 5px">
           Button</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
+        ><button class="btn btn-primary" type="button" style="margin: 5px">
           Button
         </button>
       </div>
@@ -123,29 +85,13 @@
           autocomplete="on"
           autofocus=""
           style="margin: 5px"
-        /><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
+        /><button class="btn btn-primary" type="button" style="margin: 5px">
           Button</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
+        ><button class="btn btn-primary" type="button" style="margin: 5px">
           Button</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
+        ><button class="btn btn-primary" type="button" style="margin: 5px">
           Button</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
+        ><button class="btn btn-primary" type="button" style="margin: 5px">
           Button
         </button>
       </div>
@@ -192,18 +138,14 @@
             class="form-check-input"
             type="checkbox"
             id="formCheck-1"
-          /><label class="form-check-label" for="formCheck-1"
-            >Shopping</label
-          >
+          /><label class="form-check-label" for="formCheck-1">Shopping</label>
         </div>
         <div class="form-check" style="margin: 3px">
           <input
             class="form-check-input"
             type="checkbox"
             id="formCheck-2"
-          /><label class="form-check-label" for="formCheck-2"
-            >Low Stock</label
-          >
+          /><label class="form-check-label" for="formCheck-2">Low Stock</label>
         </div>
       </div>
     </div>
@@ -223,11 +165,7 @@
     </div>
     <div class="row">
       <div class="col" style="margin: 5px">
-        <button
-          class="btn btn-primary"
-          type="submit"
-          style="margin: 3px"
-        >
+        <button class="btn btn-primary" type="submit" style="margin: 3px">
           Save
         </button>
       </div>
