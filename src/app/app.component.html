@@ -3,61 +3,60 @@
   <div id="wrapper">
    <!-- Side Bar Navigation -->
     <nav
-        class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0"
-      >
+        class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
         <div class="container-fluid d-flex flex-column p-0">
-          <a
-            class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
-            href="#"
-            ><div class="sidebar-brand-icon rotate-n-15">
-              <i
-                class="fas fa-pencil-ruler flex-grow-1 flex-shrink-1 flex-fill"
-                data-bs-toggle="tooltip"
-                data-bss-tooltip=""
-                title="Home"
-              ></i>
-            </div>
-            <div class="sidebar-brand-textmt-3 pt-5">
+          <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
+            class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0">
+                 <div class="sidebar-brand-text mt-2 mb-2 pt-5">
               <img src="../assets/img/g20687.png" width="30%" height="30%"/>
-              <span class="flex-grow-1 flex-shrink-1 flex-fill flex-wrap mx-3"> <br>Sewing Project
-            <br>Manager</span>
+              <span class="flex-grow-1 flex-shrink-1 flex-fill flex-wrap mx-3">
+                <br>Sewing Project
+            <br>Manager
+          </span>
             </div>
           </a>
           <hr class="sidebar-divider my-3" />
-          <ul class="navbar-nav text-light"
-            id="accordionSidebar"
-            style="color: rgb(255, 255, 255); font-weight: bold"
-          >
+          <ul class="navbar-nav text-light" id="accordionSidebar" style="color: rgb(255, 255, 255); font-weight: bold">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="index.html"
-                style="color: rgb(255, 255, 255)"
-                ><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a
-              >
+              <a routerLink="/dash" routerLinkActive="active" ariaCurrentWhenActive="page"
+                class="nav-link" style="color: rgb(255, 255, 255)">
+                <i class="fas fa-tachometer-alt"></i>
+                <span> Dashboard</span>
+                </a>
             </li>
             <li class="nav-item"></li>
             <li class="nav-item">
-              <a class="nav-link" href="/projects.list.html"
-                ><i class="far fa-gem"></i><span>Stash</span></a
-              ><a class="nav-link" href="/projects.list.html"
-                ><i class="fas fa-shopping-bag"></i><span>Shopping</span></a
-              ><a class="nav-link" href="/projects.list.html"
-                ><i class="fas fa-th-list"></i><span>Projects</span></a
-              ><a class="nav-link" href="/projects.list.html"
-                ><i class="fas fa-dollar-sign"></i><span>Budget</span></a
+              <a routerLink="/stash" routerLinkActive="active" ariaCurrentWhenActive="page"
+              class="nav-link">
+                <i class="far fa-gem"> </i>
+                <span> Stash</span>
+                </a>
+              <a routerLink="/shopping" routerLinkActive="active" ariaCurrentWhenActive="page"class="nav-link" >
+                <i class="fas fa-shopping-bag"></i>
+                <span> Shopping</span>
+                </a>
+              <a routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link" >
+                <i class="fas fa-th-list"></i>
+                <span> Projects</span>
+              </a>
+              <a routerLink="/budget" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link" >
+                <i class="fas fa-dollar-sign"></i>
+                <span> Budget</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/profile.html"
-                ><i class="fas fa-user"></i><span>Profile</span></a
-              ><a class="nav-link" href="/login.html"
-                ><i class="far fa-user-circle"></i><span>Login</span></a
+              <a routerLink="/profile" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link" >                <i class="fas fa-user"></i>
+                <span> Profile</span></a>
+                <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link" >
+                <i class="far fa-user-circle"></i>
+                <span> Login</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/register.html"
-                ><i class="fas fa-user-circle"></i><span>Register</span></a
+              <a routerLink="/register" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link" >
+                <i class="fas fa-user-circle"></i>
+                <span> Register</span>
+                </a
               >
             </li>
           </ul>
@@ -65,8 +64,9 @@
             <button
               class="btn rounded-circle border-0"
               id="sidebarToggle"
-              type="button"
-            ></button>
+              type="button">
+              <i class="fa-solid fa-arrow-left"></i>
+          </button>
           </div>
         </div>
     </nav>
@@ -169,11 +169,11 @@
 
 
           <!-- Start: Body -->
-          <!-- <H1>TEST JUST FOR THE MENUS AND FOOTER</H1> -->
-
+          <H1>TEST JUST FOR THE MENUS AND FOOTER</H1>
+<!-- <app-root></app-root> -->
 <!-- <app-home></app-home> -->
 <!-- <app-profile></app-profile> -->
-<app-projectform></app-projectform>
+<!-- <app-projectform></app-projectform> -->
 <!-- <app-register></app-register> -->
 <!-- <app-shopping></app-shopping> -->
 <!-- <app-stashform></app-stashform> -->
