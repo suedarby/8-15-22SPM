@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projectform.component.css']
 })
 export class ProjectformComponent implements OnInit {
-title = 'ProjectForm';
+title = 'Project';
   constructor() { }
 
   ngOnInit() {

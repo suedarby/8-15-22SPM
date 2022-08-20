@@ -1,4 +1,4 @@
-
+<!-- TODO connect and get each form piece running one at a time-->
 
 
 <div class="container">
@@ -12,10 +12,13 @@
           data-bs-placement="right"
           title="Add only one project"
           for="project"
-          >{{ title }}  Name</label
+          >{{ title }} Name</label
         >
       </div>
       <div class="col-lg-3">
+
+        <!-- TODO Project Name Input -->
+
         <input
           class="form-control flex-grow-1 flex-shrink-1 flex-fill flex-wrap"
           type="text"
@@ -26,6 +29,9 @@
         />
       </div>
       <div class="col-lg-2">
+
+     <!-- TODO Project image upload -->
+
         <label
           class="col-form-label"
           data-bs-toggle="tooltip"
@@ -50,6 +56,9 @@
       </div>
       <div class="w-100"></div>
     </div>
+
+    <!-- TODO description text box -->
+
     <div class="row">
       <div class="col-lg-2" style="height: 41px">
         <label class="col-form-label">Description</label>
@@ -62,6 +71,9 @@
           placeholder="Describe and add details about the project"
         ></textarea>
       </div>
+
+      <!-- TODO tags entry -->
+
       <div class="col-lg-1">
         <label class="col-form-label">Tags</label>
       </div>
@@ -74,33 +86,14 @@
           style="margin: 3px"
           name="tags"
           placeholder="Add Tags to aid in searching for this project"
-        /><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
-          Results</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
-          Results</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
-          Results</button
-        ><button
-          class="btn btn-primary"
-          type="button"
-          style="margin: 5px"
-        >
-          Results
-        </button>
+        />
+        <!-- TODO tags results *ngif to repeat results button-->
+        <button class="btn btn-primary" type="button" style="margin: 5px" >  Results</button >
       </div>
     </div>
+
+
+
     <div class="row">
       <div class="col-lg-2" style="height: 41px">
         <label class="col-form-label">Category</label>
