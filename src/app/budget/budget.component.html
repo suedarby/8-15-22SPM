@@ -1,0 +1,113 @@
+<div class="col-lg-12 mb-4">
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <!-- TODO link to shopping list page from here -->
+      <h6 class="text-primary fw-bold m-0">Project Budgets</h6>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <div class="row align-items-center no-gutters">
+          <div class="col me-2">
+            <!-- Start: shopping-item -->
+            <!-- ngfor loop for each item on the list limit 5 -->
+            <h6 class="mb-0"><strong> Project </strong></h6>
+            <span class="text-xs" style="margin: 5px"> Status</span
+            >
+            <span
+              class="text-xs"
+              style="margin: 5px"
+              >Budget Remaining</span>
+            <span
+              class="text-xs"
+              style="margin: 5px"
+              >Cost</span
+            >
+          </div>
+<!-- checkbox -->
+          <div class="col-auto">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="formCheck-1"
+              /><label
+                class="form-check-label"
+                for="formCheck-1"
+              ></label>
+            </div>
+          </div>
+        </div>
+
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="row">
+      <div class="col-lg-5">
+        <h6 class="text-primary fw-bold m-0">Project List</h6>
+      </div>
+      <div class="col-lg-12 mb-4">
+        <div class="card text-white bg-primary shadow">
+          <div class="card-body">
+            <!-- TODO assign colors not started blue(primary), In progress green(success), missing supplies red (danger)
+            TODO ngfor loop top 5 projects and ngif based on colors -->
+            <p class="m-0">
+              <!-- TODO target project-name -->
+              Project Name Not started Blue</p>
+          <span class="col-auto">
+            <!-- TODO target project-description -->
+            <p id ="project-description" class="small">DESCRIPTION HERE</p>
+          </span>
+<!-- TODO target status -->
+          <p id="project status">STATUS HERE</p>
+          <!-- TODO target budget-total & budget-remaining -->
+              <span class="text-xs" style="margin: 5px">
+                Budget Remaining</span>
+                <!-- TODO target tag -->
+              <span class="text-xs" style="margin: 5px">
+                Tags</span>
+              <!-- TODO find a status bar for this area -->
+
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                  40% Complete (success)
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 mb-4">
+        <div class="card text-black bg-success shadow">
+          <div class="card-body">
+
+            <!-- TODO find a darker green -->
+            <p class="m-0">In Progress Green</p>
+            <p class="text-black small m-0">#1cc88a</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-12 mb-4">
+        <div class="card text-white bg-danger shadow">
+          <div class="card-body">
+            <p class="m-0">Missing Supplies Red</p>
+            <p class="text-white small m-0">#e74a3b</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+  TODO build out budget page
+     project list and budget set
+     supplies cost (sum from shoppping list)
+     supplies purchased (sum from shopping list marked as purchased)
+     remaining budget for project
+
+    TODO layout in cards 3x or one wide with image?
+  -->

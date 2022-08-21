@@ -16,9 +16,10 @@ import { ShoppingComponent } from './shopping/shopping.component';
 import { StashformComponent } from './stashform/stashform.component';
 import { StashComponent } from './stash/stash.component';
 import { HomeComponent } from './home/home.component';
+import { BudgetComponent } from './budget/budget.component';
 
 @NgModule({ //original
-  declarations: [	//original
+  declarations: [		//original
     AppComponent, //original
     ProjectsComponent,
     DashComponent,
@@ -29,7 +30,8 @@ import { HomeComponent } from './home/home.component';
       ShoppingComponent,
       StashformComponent,
       StashComponent,
-      HomeComponent
+      HomeComponent,
+      BudgetComponent
    ], //original
 
   imports: [

@@ -10,6 +10,7 @@ import { ProjectformComponent } from './projectform/projectform.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { DashComponent } from './dash/dash.component';
+import { BudgetComponent } from './budget/budget.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'stashform', component: StashformComponent },
   { path: 'stash', component: StashComponent},
   { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent}
+  { path: 'login', component: LoginComponent},
+  { path: 'budget', component: BudgetComponent}
 ];
 
 @NgModule({
