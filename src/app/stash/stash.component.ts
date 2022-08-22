@@ -9,7 +9,13 @@ export class StashComponent implements OnInit {
   title = 'Stash';
   constructor() { }
 
+  handleClick(event: any): void {
+alert('Stash clicked');
+
+  }
   ngOnInit() {
   }
 
 }
+
+// controller

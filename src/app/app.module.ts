@@ -17,6 +17,7 @@ import { StashformComponent } from './stashform/stashform.component';
 import { StashComponent } from './stash/stash.component';
 import { HomeComponent } from './home/home.component';
 import { BudgetComponent } from './budget/budget.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({ //original
   declarations: [		//original
@@ -38,6 +39,7 @@ import { BudgetComponent } from './budget/budget.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgbModule,
 
    ], //original
   providers: [], //original

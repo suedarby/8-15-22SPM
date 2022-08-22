@@ -12,4 +12,9 @@ title = 'Project';
   ngOnInit() {
   }
 
+  projectName: string = '';
+// supplyItem: string = '';
+
+
+
 }
