@@ -11,6 +11,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { DashComponent } from './dash/dash.component';
 import { BudgetComponent } from './budget/budget.component';
+import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
+
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,7 +26,8 @@ const routes: Routes = [
   { path: 'stash', component: StashComponent},
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent},
-  { path: 'budget', component: BudgetComponent}
+  { path: 'budget', component: BudgetComponent},
+  { path: 'shoppinglist', component: ShoppinglistComponent}
 ];
 
 @NgModule({

@@ -18,9 +18,10 @@ import { StashComponent } from './stash/stash.component';
 import { HomeComponent } from './home/home.component';
 import { BudgetComponent } from './budget/budget.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 
 @NgModule({ //original
-  declarations: [		//original
+  declarations: [			//original
     AppComponent, //original
     ProjectsComponent,
     DashComponent,
@@ -32,7 +33,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
       StashformComponent,
       StashComponent,
       HomeComponent,
-      BudgetComponent
+      BudgetComponent,
+      ShoppinglistComponent
    ], //original
 
   imports: [

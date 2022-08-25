@@ -1,27 +1,42 @@
 <div class="col-lg-12 mb-4">
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <!-- TODO link to shopping list page from here -->
-      <h6 class="text-primary fw-bold m-0">Project Budgets</h6>
+
+
+      <!-- <em><b>TODO link to shopping list page from here + project + stash
+</b></em> -->
+
+
+      <h4 class="text-primary fw-bold m-0">Project Budgets</h4>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
         <div class="row align-items-center no-gutters">
           <div class="col me-2">
             <!-- Start: shopping-item -->
-            <!-- ngfor loop for each item on the list limit 5 -->
-            <h6 class="mb-0"><strong> Project </strong></h6>
-            <span class="text-xs" style="margin: 5px"> Status</span
+<!-- <ul>
+            <li><b>      TODO     ngfor loop for each item on the list limit 5
+</b></li></ul> -->
+
+
+            <h6 class="mb-0"><strong id="projectname"> Project </strong></h6>
+<p><em><b>TARGET id project-name</b></em></p>
+
+
+            <span class="text-s" style="margin: 5px" id="project-status"> Status</span
             >
+                 <p> <em><b>TARGET id project-status</b></em></p>
+
             <span
-              class="text-xs"
+              class="text-s"
               style="margin: 5px"
-              >Budget Remaining</span>
+              id="remain-budget">Budget Remaining</span>
+              <p><strong>TARGET id remain-budget</strong></p>
             <span
-              class="text-xs"
+              class="text-s"
               style="margin: 5px"
-              >Cost</span
-            >
+            id="cost"  >Cost</span
+            ><p><strong>TARGET id cost</strong></p>
           </div>
 <!-- checkbox -->
           <div class="col-auto">
@@ -41,6 +56,16 @@
     </ul>
   </div>
 </div>
+<p><strong> <ul><li>
+TODO assign colors not started blue(primary), In progress green(success), missing supplies red (danger)
+
+</li>
+<li>         TODO ngfor loop top 5 projects and ngif based on colors
+</li>
+<li>          TODO target project-name
+</li>
+</ul>
+</strong></p>
 <div class="row">
   <div class="col">
     <div class="row">
@@ -50,24 +75,28 @@
       <div class="col-lg-12 mb-4">
         <div class="card text-white bg-primary shadow">
           <div class="card-body">
-            <!-- TODO assign colors not started blue(primary), In progress green(success), missing supplies red (danger)
-            TODO ngfor loop top 5 projects and ngif based on colors -->
-            <p class="m-0">
-              <!-- TODO target project-name -->
+
+ <p class="m-0">
+
               Project Name Not started Blue</p>
           <span class="col-auto">
-            <!-- TODO target project-description -->
+            <em><b>            TODO target project-description
+</b></em>
             <p id ="project-description" class="small">DESCRIPTION HERE</p>
           </span>
-<!-- TODO target status -->
+          <em><b>          TODO target status
+</b></em>
           <p id="project status">STATUS HERE</p>
-          <!-- TODO target budget-total & budget-remaining -->
+          <em><b>          TODO target budget-total & budget-remaining
+</b></em>
               <span class="text-xs" style="margin: 5px">
                 Budget Remaining</span>
-                <!-- TODO target tag -->
+                <em><b>                TODO target tag
+</b></em>
               <span class="text-xs" style="margin: 5px">
                 Tags</span>
-              <!-- TODO find a status bar for this area -->
+                <em><b>                TODO find a status bar for this area
+</b></em>
 
               <div class="progress">
                 <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
@@ -102,12 +131,17 @@
     </div>
   </div>
 </div>
-<!--
-  TODO build out budget page
-     project list and budget set
-     supplies cost (sum from shoppping list)
-     supplies purchased (sum from shopping list marked as purchased)
-     remaining budget for project
 
-    TODO layout in cards 3x or one wide with image?
-  -->
+<em><b>  TODO build out budget page
+</b></em>
+<em><b>     project list and budget set
+</b></em>
+<em><b>     supplies cost (sum from shoppping list)
+</b></em>
+<em><b>     supplies purchased (sum from shopping list marked as purchased)
+</b></em>
+<em><b>     remaining budget for project
+</b></em>
+<em><b>    TODO layout in cards 3x or one wide with image?
+</b></em>
+

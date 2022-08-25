@@ -1,5 +1,6 @@
-<!-- TODO connect and get each form piece running one at a time-->
 
+<em><b>TODO connect and get each form piece running one at a time
+</b></em>
 
 <div class="container text-black">
   <form>
@@ -9,18 +10,22 @@
           title="Add only one project" for="project">{{ title }} Name</label>
       </div>
       <div class="col-lg-3">
+        <em><b>        TODO Project Name Input
+</b></em>
+        <em><b>        TODO this is two way binding using ngModel
+</b></em>
 
-        <!-- TODO Project Name Input -->
-        <!-- TODO this is two way binding using ngModel-->
         <input class="form-control flex-grow-1 flex-shrink-1 flex-fill flex-wrap" type="text"
           style=" border: 1px solid black; height: 38px; margin: 3px" required="" name="project"
           placeholder="Project Name" [(ngModel)]="projectName" />
-        <!-- on change event -->
+          <em><b>          on change event
+</b></em>
         <p>{{projectName}}</p>
       </div>
       <div class="col-lg-2">
+        <em><b>        TODO Project image upload
+</b></em>
 
-        <!-- TODO Project image upload -->
 
         <label class="col-form-label" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right"
           style="margin-right: 28px" for="image" title="More than one can be added">
@@ -28,14 +33,16 @@
       </div>
       <div class="col">
         <input class="form-control" type="file" style="margin: 5px" name="images" accept="image/*" />
-        <!-- ngFor upload-->
+        <em><b>        ngFor upload
+</b></em>
         <img style="margin: 5px" />
         <img style="margin: 5px" />
         <img style="margin: 5px" />
         <img style="margin: 5px" />
       </div>
     </div>
-    <!-- TODO description text box -->
+    <em><b>TODO description text box
+</b></em>
 
     <div class="row">
       <div class="col-lg-2" style="height: 41px">
