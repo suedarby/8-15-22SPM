@@ -47,6 +47,8 @@ import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
   providers: [], //original
   bootstrap: [AppComponent] //original
 }) //original
+
+
 export class AppModule { } //original
 
 //file #1

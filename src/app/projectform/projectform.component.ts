@@ -13,8 +13,15 @@ title = 'Project';
   }
 
   projectName: string = '';
-// supplyItem: string = '';
-
-
-
+  projectDescription: string = '';
+  qty: string = '';
+  location: string = '';
+  status: string = '';
+  category: string = '';
+  budget: string = '';
+  tags: string = '';
+  item: string = '';
+  supplyItem: string = '';
+  supplyDescription: string = '';
+  image: string = '';
 }

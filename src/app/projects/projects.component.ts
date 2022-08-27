@@ -12,4 +12,9 @@ title = 'Projects';
   ngOnInit(): void {
   }
 
+  projectName: string = '';
+description: string = '';
+qty: string = '';
+
+
 }

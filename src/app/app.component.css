@@ -1,0 +1,40 @@
+.m5 {
+  margin: 5px;
+ }
+
+ .m3 {
+  margin: 3px;
+ }
+
+ .p5 {
+  padding: 5px;
+ }
+
+ .boxborder {
+  border: 1px solid black;
+  height: 38px;
+  margin: 3px;
+ }
+
+.b1 {
+  border: 1px solid black;
+}
+
+ .mr {
+  margin-right: 28px;
+ }
+
+ .desc {
+  height: 137px;
+  margin: 3px;
+  border: 1px solid black;
+ }
+
+ .descl {
+  height: 41px;
+ }
+
+.results {
+  margin: 3px;
+  border: 1px solid black;
+}

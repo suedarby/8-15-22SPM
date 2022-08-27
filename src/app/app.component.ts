@@ -8,7 +8,11 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './app.component.html', //original
   styleUrls: ['./app.component.css'] //original
 }) //original
+
+
+
 export class AppComponent { //original
   title = 'Sewing Project Manager'; //original
   facoffee = faCoffee;
+  
 } //original

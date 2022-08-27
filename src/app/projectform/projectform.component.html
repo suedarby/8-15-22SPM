@@ -1,173 +1,209 @@
 
-<em><b>TODO connect and get each form piece running one at a time
-</b></em>
+<!-- TODO connect and get each form piece running one at a time -->
 
 <div class="container text-black">
   <form>
-    <div class="row" style="padding: 5px;">
+<!-- {{ title }} is Project from the ts file -->
+    <div class="row p5" >
       <div class="col-lg-2">
         <label class="col-form-label" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right"
           title="Add only one project" for="project">{{ title }} Name</label>
       </div>
       <div class="col-lg-3">
-        <em><b>        TODO Project Name Input
-</b></em>
-        <em><b>        TODO this is two way binding using ngModel
-</b></em>
 
-        <input class="form-control flex-grow-1 flex-shrink-1 flex-fill flex-wrap" type="text"
-          style=" border: 1px solid black; height: 38px; margin: 3px" required="" name="project"
+<!--  TODO Project Name Input field
+      TODO this is two way binding using ngModel -->
+
+        <input class="form-control flex-grow-1 flex-shrink-1 flex-fill flex-wrap boxborder" type="text"
+          required="" name="projectName"
           placeholder="Project Name" [(ngModel)]="projectName" />
-          <em><b>          on change event
-</b></em>
+<!-- TODO on change event -->
         <p>{{projectName}}</p>
       </div>
       <div class="col-lg-2">
-        <em><b>        TODO Project image upload
-</b></em>
+<!-- TODO Project image upload -->
 
-
-        <label class="col-form-label" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right"
-          style="margin-right: 28px" for="image" title="More than one can be added">
+<!-- TODO HOW DOES THIS WORK??? -->
+        <label class="col-form-label mr" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right"
+           for="image" title="More than one can be added">
           Images</label>
       </div>
-      <div class="col">
-        <input class="form-control" type="file" style="margin: 5px" name="images" accept="image/*" />
-        <em><b>        ngFor upload
-</b></em>
-        <img style="margin: 5px" />
-        <img style="margin: 5px" />
-        <img style="margin: 5px" />
-        <img style="margin: 5px" />
-      </div>
+      <div class="col mb-3">
+        <input class="form-control m5" type="file"  name="images" accept="image/*" />
+<!-- TODO ngFor upload to display the image -->
+<div class="mt-3">
+        <img class="m5" src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656"/>{{image}}
+        <img class="m5" src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656"/>
+        {{image}}
+        <img class="m5" src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656"/>
+        {{image}}
+        <img class="m5" src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656"/>
+        {{image}}
+ </div>     </div>
     </div>
-    <em><b>TODO description text box
-</b></em>
 
+<!-- TODO description text box -->
     <div class="row">
-      <div class="col-lg-2" style="height: 41px">
+      <div class="col-lg-2 descl" >
         <label class="col-form-label">Description</label>
       </div>
-      <div class="col-lg-5">
-        <textarea class="form-control" style="height: 137px; margin: 3px;  border: 1px solid black; "
-          name="project-description " placeholder="Describe and add details about the project"></textarea>
+
+<!-- TODO  [(ngModel)]="projectDescription" -->
+      <div class="col-lg-5 boxborder">
+        <textarea class="form-control desc" [(ngModel)]="projectDescription"
+          name="projectDescription " placeholder="Describe and add details about the project"></textarea>
+          <p>{{projectDescription}}</p>
       </div>
 
-      <!-- TODO tags entry -->
+<!-- TODO tags entry
+[(ngModel)]="tags"
+TODO ngIf
+TODO ngFor
+TODO onKeyPress="enter will save"
+TODO allow multiple tags to show on the buttons individually
+TODO ensure that multiple tags can be saved
+-->
 
       <div class="col-lg-1">
         <label class="col-form-label">Tags</label>
       </div>
       <div class="col">
-        <input class="form-control" type="text" autocomplete="on" autofocus=""
-          style="margin: 3px;  border: 1px solid black; " name="tags"
+        <input [(ngModel)]="tags" class="form-control results" type="text" autocomplete="on" autofocus="" name="tags"
           placeholder="Add Tags to aid in searching for this project" />
-        <!-- TODO tags results *ngif to repeat results button ngFor-->
-        <button class="btn btn-primary" type="button" style="margin: 5px">
-          Tag Results
+<!-- TODO tags results *ngif to repeat results button ngFor-->
+        <button class="btn btn-primary m5" type="button" >
+          {{tags}}
         </button>
       </div>
     </div>
 
-    <!-- spacing line -->
-    <div class="w-100"> </div>
-
+    <!-- Category
+    [(ngModel)]="category"
+TODO ngIf
+TODO ngFor
+TODO onKeyPress="enter will save"
+TODO allow multiple categories to show on the buttons individually
+TODO ensure that multiple categories can be saved
+    -->
     <div class="row">
-      <div class="col-lg-2" style="height: 41px">
+      <div class="col-lg-2 descl" >
         <label class="col-form-label">Category</label>
       </div>
       <div class="col">
-        <input class="form-control" type="text" autocomplete="on" autofocus=""
-          style="margin: 3px;  border: 1px solid black; " name="category"
-          placeholder="Add a category or more than one" />
+        <input [(ngModel)]="category" class="form-control results" type="text" autocomplete="on" autofocus=""
+         name="category" placeholder="Add a category or more than one" />
 
-        <button class="btn btn-primary" type="button" style="margin: 5px">
+        <button class="btn btn-primary m5" type="button" >
           <!-- ngFor -->
-          Category Results
+          {{category}}
         </button>
       </div>
 
-
+<!-- Location
+[(ngModel)]="location"
+TODO ngIf
+TODO ngFor
+TODO onKeyPress="enter will save"
+TODO allow multiple tags to show on the buttons individually
+TODO ensure that multiple tags can be saved
+-->
       <div class="col-lg-1">
-        <label class="col-form-label">Location</label>
+        <label class="col-form-label descl">Location</label>
       </div>
       <div class="col">
-        <input class="form-control" type="text" autocomplete="on" autofocus=""
-          style="margin: 5px;  border: 1px solid black; " name="location"
-          placeholder="Describe the Container &amp; Location" />
-        <button class="btn btn-primary" type="button" style="margin: 5px">
+        <input [(ngModel)]="location" class="form-control results" type="text" autocomplete="on" autofocus=""
+        name="location" placeholder="Describe the Container &amp; Location" />
+        <button class="btn btn-primary m5" type="button" >
           <!-- TODO ngfor -->
-          Location Results
+          {{location}}
         </button>
       </div>
 
     </div>
 
-    <!-- ngif -->
+    <!-- Status -->
 
     <div class="row">
       <div class="col">
+        <div class="col-lg-2 descl" >
+        <label class="col-form-label">Status</label>
+        </div>
+<!-- TODO boolean toggle buttons -->
         <div class="form-check form-switch form-check-inline">
-          <input class="form-check-input" type="checkbox" id="formCheck-3" />
-          <label class="form-check-label" for="formCheck-3">
+          <input class="form-check-input" type="checkbox" id="notStarted" />
+          <label class="form-check-label" for="notStarted">
             Not Started</label>
         </div>
 
-        <!-- toggle buttons -->
+
         <div class="form-check form-switch form-check-inline">
-          <input class="form-check-input" type="checkbox" id="formCheck-5" /><label class="form-check-label"
-            for="formCheck-5">In Progress</label>
+          <input class="form-check-input" type="checkbox" id="inProgress" /><label class="form-check-label"
+            for="inProgress">In Progress</label>
         </div>
+
         <div class="form-check form-switch form-check-inline">
-          <input class="form-check-input" type="checkbox" id="formCheck-7" /><label class="form-check-label"
-            for="formCheck-7">Missing Supplies</label>
+          <input class="form-check-input" type="checkbox" id="missingSupplies" /><label class="form-check-label"
+            for="missingSupplies">Missing Supplies</label>
         </div>
+
         <div class="form-check form-switch form-check-inline">
-          <input class="form-check-input" type="checkbox" id="formCheck-6" /><label class="form-check-label"
-            for="formCheck-6">UFO</label>
+          <input class="form-check-input" type="checkbox" id="ufo" /><label class="form-check-label"
+            for="ufo">UFO</label>
         </div>
+
         <div class="form-check form-switch form-check-inline">
-          <input class="form-check-input" type="checkbox" id="formCheck-4" /><label class="form-check-label"
-            for="formCheck-4">Completed</label>
+          <input class="form-check-input" type="checkbox" id="completed" /><label class="form-check-label"
+            for="completed">Completed</label>
         </div>
+
       </div>
     </div>
 
-    <!-- SUPPLIES LIST -->
+<h3 class="mt-3">Supplies</h3>
+    <!-- SUPPLIES LIST
+     TODO  [(ngModel)]="supplyItem"
+    -->
     <div class="row mt-3 mb-2">
       <div class="col-lg-1">
         <label class="col-form-label">Item</label>
       </div>
       <div class="col">
-        <input class="form-control flex-grow-1 flex-shrink-1" type="text" autocomplete="on" autofocus=""
-          name="supply-item" placeholder="What do you need?" style=" border: 1px solid black; " />
+        <input [(ngModel)]="supplyItem" class="form-control flex-grow-1 flex-shrink-1 b1" type="text" autocomplete="on" autofocus=""
+          name="supplyItem" placeholder="What do you need?"  />
+          {{supplyItem}}
       </div>
+
+<!--      TODO
+[(ngModel)]="qty"
+-->
       <div class="col-lg-1">
         <label class="col-form-label">Quantity</label>
       </div>
       <div class="col">
-        <input class="form-control flex-grow-1 flex-shrink-1" type="text" autocomplete="on"
-          style=" border: 1px solid black; " autofocus="" placeholder="How much do you need?" name="qty" />
+        <input [(ngModel)]="qty" class="form-control flex-grow-1 flex-shrink-1 b1" type="text" autocomplete="on" autofocus="" placeholder="How much do you need?" name="qty" />
+           {{qty}}
       </div>
     </div>
+
+    <!--      TODO
+[(ngModel)]="supplyDescription"
+-->
+
     <div class="row">
       <div class="col-lg-2">
         <label class="col-form-label">Description</label>
       </div>
       <div class="col">
-        <textarea class="form-control flex-grow-1 flex-shrink-1" autofocus="" name="supply-description"
+        <textarea [(ngModel)]="supplyDescription" class="form-control flex-grow-1 flex-shrink-1 b1" autofocus="" name="supply-description"
           placeholder="Add details about the supply item such as color, sizes or styles" rows="4"
-          style=" border: 1px solid black; ">
+          >
         </textarea>
+{{supplyDescription}}
 
 
-        <input class="form-control flex-grow-1 flex-shrink-1 flex-fill flex-wrap" type="text"
-        style=" border: 1px solid black; height: 38px; margin: 3px" required="" name="project"
-        placeholder="Project Name" [(ngModel)]="projectName" />
       <!-- on change event -->
-      <p>{{projectName}}</p>
 
-
+<!-- TODO save to supplies list ngFor  -->
         <button class=" m-3 btn btn-primary">Add to Supplies List for This Project</button>
       </div>
     </div>
@@ -177,34 +213,39 @@
       <div class="col">
         <div class="card">
           <div class="card-body flex-grow-1 flex-shrink-1 flex-wrap">
-            <h4 class="card-title">Supplies Item Name</h4>
+            <h4 class="card-title">Supplies</h4>
 
-            <!-- on change event -->
-            <p>{{projectName}}</p>
+<!-- TODO on change event -->
+<p>Item</p>
+            <p>{{supplyItem}}</p>
           </div>
           <div class="col-lg-2 m-3">
 
-            <!-- the description text should target here -->
+<!-- TODO the description text should target here -->
             <p>Description</p>
-            <p>supply description here</p>
+            <p>{{supplyDescription}}</p>
             <p>Qty</p>
-            <p>qty here</p>
+            <p>{{qty}}</p>
             <div class="form-check form-switch">
-              <!-- this should check the stash and determine if the item needs to be added to the shopping list -->
-              <input class="form-check-input" type="checkbox" id="formCheck-1" />
-              <label class="form-check-label" for="formCheck-1"> Check Stash</label>
+<!-- TODO this should check the stash and determine if the item needs to be added to the shopping list -->
+<!-- TODO ngIf (switch?) box is true check stash else add to shopping-->
+              <input class="form-check-input" type="checkbox" id="checkStash" />
+              <label class="form-check-label" for="checkStash"> Check Stash</label>
             </div>
+<!-- TODO if checked =true add to shoppinglist -->
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="formCheck-2" />
-              <label class="form-check-label" for="formCheck-2">Add to Shopping List</label>
+              <input class="form-check-input" type="checkbox" id="addToShopping" />
+              <label class="form-check-label" for="addToShopping">Add to Shopping List</label>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+<!-- TODO save all data to the database  -->
     <div class="row">
-      <div class="col" style="margin: 5px">
-        <button class="btn btn-primary flex-grow-1 flex-shrink-1" type="submit" style="margin: 3px">
+      <div class="col m5" >
+        <button class="btn btn-primary flex-grow-1 flex-shrink-1 m3" type="submit" >
           Save
         </button>
       </div>
