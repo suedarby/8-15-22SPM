@@ -20,6 +20,12 @@ import { BudgetComponent } from './budget/budget.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 
+// import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+// import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
+
 @NgModule({ //original
   declarations: [			//original
     AppComponent, //original
@@ -42,13 +48,14 @@ import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
     AppRoutingModule,
     FormsModule,
     NgbModule,
+    // provideFirebaseApp(() => initializeApp({ })),
+    // provideFirestore(() => getFirestore()),
+    AngularFireModule.initializeApp(environment.firebase)
 
    ], //original
   providers: [], //original
   bootstrap: [AppComponent] //original
 }) //original
-
-
 export class AppModule { } //original
 
 //file #1
