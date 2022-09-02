@@ -11,7 +11,7 @@ title = 'Project';
 
   ngOnInit() {
   }
-
+// projectForm DB
   projectName: string = '';
   projectDescription: string = '';
   qty: string = '';
@@ -24,4 +24,9 @@ title = 'Project';
   supplyItem: string = '';
   supplyDescription: string = '';
   image: string = '';
+  notStarted: boolean = false;
+  inProgress: boolean = false;
+  missingSupplies: boolean = false;
+  ufo: boolean = false;
+  completed: boolean = false;
 }

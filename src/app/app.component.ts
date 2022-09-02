@@ -1,7 +1,5 @@
 import { Component } from '@angular/core'; //original
 
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 
@@ -13,11 +11,10 @@ import { Observable } from 'rxjs';
 }) //original
 export class AppComponent { //original
   title = 'Sewing Project Manager'; //original
-  facoffee = faCoffee;
 
-  items: Observable<any[]>;
+  project: Observable<any[]>;
   constructor(firestore: AngularFirestore) {
-    this.items = firestore.collection('items').valueChanges();
+    this.project = firestore.collection('projectForm').valueChanges();
   }
 
 } //original
