@@ -1,3 +1,5 @@
+//does nothing more than log in or out and authenticate user
+
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import {
