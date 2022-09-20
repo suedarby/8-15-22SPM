@@ -7,11 +7,11 @@ import {
   doc,
   updateDoc,
 } from '@firebase/firestore';
-import { Firestore, collectionData, docData } from '@angular/fire/firestore';
+// import { Firestore, collectionData, docData } from '@angular/fire/firestore';
 
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ProjectformComponent } from './projectform/projectform.component';
+import { ProjectformComponent } from './projects/projectform/projectform.component';
 
 // interface Pokemon {
 //   height: number;

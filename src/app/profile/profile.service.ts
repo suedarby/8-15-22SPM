@@ -7,3 +7,6 @@ export class ProfileService {
 
   constructor() { }
 }
+
+
+//RUD for profile

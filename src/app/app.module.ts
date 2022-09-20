@@ -8,12 +8,12 @@ import { AppComponent } from './app.component'; //original
 
 import { ProjectsComponent } from './projects/projects.component';
 import { DashComponent } from './dash/dash.component';
-import { LoginComponent } from './auth/login/login.component';
+// import { LoginComponent } from './auth/login/login.component';
 import { ProfileComponent } from './profile/profile.component';
-import { ProjectformComponent } from './projectform/projectform.component';
+import { ProjectformComponent } from './projects/projectform/projectform.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { ShoppingComponent } from './shopping/shopping.component';
-import { StashformComponent } from './stashform/stashform.component';
+import { ShoppingComponent } from './shoppinglist/shopping/shopping.component';
+import { StashformComponent } from './stash/stashform/stashform.component';
 import { StashComponent } from './stash/stash.component';
 import { HomeComponent } from './home/home.component';
 import { BudgetComponent } from './budget/budget.component';
@@ -23,7 +23,7 @@ import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 // import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 // import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
-import { AngularFireModule } from '@angular/fire/compat';
+// import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 
 @NgModule({ //original
@@ -31,7 +31,7 @@ import { environment } from '../environments/environment';
     AppComponent, //original
     ProjectsComponent,
     DashComponent,
-      LoginComponent,
+      // LoginComponent,
       ProfileComponent,
       ProjectformComponent,
       RegisterComponent,
@@ -50,7 +50,7 @@ import { environment } from '../environments/environment';
     NgbModule,
     // provideFirebaseApp(() => initializeApp({ })),
     // provideFirestore(() => getFirestore()),
-    AngularFireModule.initializeApp(environment.firebase)
+    // AngularFireModule.initializeApp(environment.firebase)
 
    ], //original
   providers: [], //original
