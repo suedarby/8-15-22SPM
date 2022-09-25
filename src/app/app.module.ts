@@ -25,6 +25,7 @@ import { ShoppinglistComponent } from './shoppinglist/shoppinglist.component';
 
 // import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
+import { DashModule } from './dash/dash.module';
 
 @NgModule({ //original
   declarations: [			//original
@@ -48,6 +49,7 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     FormsModule,
     NgbModule,
+    DashModule,
     // provideFirebaseApp(() => initializeApp({ })),
     // provideFirestore(() => getFirestore()),
     // AngularFireModule.initializeApp(environment.firebase)
